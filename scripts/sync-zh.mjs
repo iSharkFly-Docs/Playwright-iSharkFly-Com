@@ -1,14 +1,21 @@
-// Builds the Simplified Chinese mirror of the site in src/zh/.
+// Assembles the bilingual site that VitePress builds, in site/ (generated, git-ignored).
 //
-// For every English page in src/ (Node.js at the root, plus python/, java/, dotnet/):
-//   - if i18n/zh/<same path> exists, that translated page is used;
-//   - otherwise the English page is copied and marked `untranslated: true`,
-//     so the theme can show a "not translated yet" notice.
-// Site-absolute links ("/intro", "/python/api/...") are moved under /zh/ so readers
-// stay in the Chinese site. Images and other static files are not changed.
+// Simplified Chinese is the default language and is served from the site root;
+// English is served from /en/.
 //
-// src/zh/ is generated: do not edit it. Put translations in i18n/zh/ instead,
-// using the same relative path and English-style links (for example "/intro.md").
+// Input:
+//   src/            English pages (Node.js at the root, plus python/, java/, dotnet/),
+//                   created by scripts/generate.mjs, and src/public/ (images).
+//   i18n/zh/        Chinese translations, using the same relative paths as src/.
+//
+// Output:
+//   site/           Chinese pages. A page from i18n/zh/ is used when it exists; otherwise
+//                   the English page is copied and marked `untranslated: true`, so the
+//                   theme shows a "not translated yet" notice.
+//   site/en/        English pages, with site-absolute links moved under /en/.
+//   site/public/    Copy of src/public/.
+//
+// Write translations with the same links as the English pages (for example "/intro.md").
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,13 +23,14 @@ import { fileURLToPath } from 'node:url';
 
 const SITE_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC_DIR = path.join(SITE_DIR, 'src');
-const ZH_OUT_DIR = path.join(SRC_DIR, 'zh');
+const OUT_DIR = path.join(SITE_DIR, 'site');
+const EN_DIR = 'en';
 const ZH_TRANSLATIONS_DIR = path.join(SITE_DIR, 'i18n', 'zh');
 
 // Top-level folders in src/ that are not English pages.
-const SKIP_DIRS = new Set(['zh', 'public']);
-// Site-absolute paths that point to static files and must not get the /zh prefix.
-const STATIC_PREFIXES = ['images/', 'img/', 'zh/'];
+const SKIP_DIRS = new Set(['public', 'zh', EN_DIR]);
+// Site-absolute paths that point to static files and must not get a language prefix.
+const STATIC_PREFIXES = ['images/', 'img/', `${EN_DIR}/`];
 
 function listMarkdown(dir, rel = '') {
   const files = [];
@@ -39,18 +47,18 @@ function listMarkdown(dir, rel = '') {
   return files;
 }
 
-function toZhPath(target) {
-  return STATIC_PREFIXES.some(prefix => target.startsWith(prefix)) ? `/${target}` : `/zh/${target}`;
+function toEnglishPath(target) {
+  return STATIC_PREFIXES.some(prefix => target.startsWith(prefix)) ? `/${target}` : `/${EN_DIR}/${target}`;
 }
 
-function localizeLinks(text) {
+function moveLinksUnderEnglish(text) {
   return text
     // Markdown links and images: [text](/path)
-    .replace(/\]\(\/(?!\/)([^)\s]*)/g, (_, target) => `](${toZhPath(target)}`)
+    .replace(/\]\(\/(?!\/)([^)\s]*)/g, (_, target) => `](${toEnglishPath(target)}`)
     // HTML attributes: href="/path"
-    .replace(/\bhref="\/(?!\/)([^"]*)"/g, (_, target) => `href="${toZhPath(target)}"`)
+    .replace(/\bhref="\/(?!\/)([^"]*)"/g, (_, target) => `href="${toEnglishPath(target)}"`)
     // Front matter links, for example on the home pages: "link: /intro"
-    .replace(/^(\s*link:\s*)\/(?!\/)(\S*)/gm, (_, prefix, target) => `${prefix}${toZhPath(target)}`);
+    .replace(/^(\s*link:\s*)\/(?!\/)(\S*)/gm, (_, prefix, target) => `${prefix}${toEnglishPath(target)}`);
 }
 
 function markUntranslated(text) {
@@ -59,23 +67,31 @@ function markUntranslated(text) {
   return `---\nuntranslated: true\n---\n\n${text}`;
 }
 
+function write(rel, text) {
+  const file = path.join(OUT_DIR, rel);
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, text);
+}
+
 function main() {
-  fs.rmSync(ZH_OUT_DIR, { recursive: true, force: true });
+  fs.rmSync(OUT_DIR, { recursive: true, force: true });
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  if (fs.existsSync(path.join(SRC_DIR, 'public')))
+    fs.cpSync(path.join(SRC_DIR, 'public'), path.join(OUT_DIR, 'public'), { recursive: true });
 
   let translated = 0;
   const pages = listMarkdown(SRC_DIR);
   for (const rel of pages) {
+    const english = fs.readFileSync(path.join(SRC_DIR, rel), 'utf8');
+    write(`${EN_DIR}/${rel}`, moveLinksUnderEnglish(english));
+
     const translationFile = path.join(ZH_TRANSLATIONS_DIR, rel);
-    let text;
     if (fs.existsSync(translationFile)) {
-      text = fs.readFileSync(translationFile, 'utf8');
+      write(rel, fs.readFileSync(translationFile, 'utf8'));
       translated++;
     } else {
-      text = markUntranslated(fs.readFileSync(path.join(SRC_DIR, rel), 'utf8'));
+      write(rel, markUntranslated(english));
     }
-    const outFile = path.join(ZH_OUT_DIR, rel);
-    fs.mkdirSync(path.dirname(outFile), { recursive: true });
-    fs.writeFileSync(outFile, localizeLinks(text));
   }
 
   // Translations without a matching English page are probably stale.
@@ -87,7 +103,7 @@ function main() {
     }
   }
 
-  console.log(`[sync-zh] ${pages.length} pages written to src/zh/ (${translated} translated).`);
+  console.log(`[sync-zh] ${pages.length} pages: Chinese in site/ (${translated} translated), English in site/${EN_DIR}/.`);
 }
 
 main();

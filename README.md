@@ -82,9 +82,9 @@ vitepress v2.0.0-alpha.17
 | Docker 手册中译 MD 在线版 | https://docker-docs.ossez.com/ | 因为 Docker 的官方手册进行了渲染，我们推荐你使用上面的链接，这个版本为 docsify 渲染版本，可能会丢格式 |
 ## 中英双语
 
-站点同时提供 English（根路径 `/`）和简体中文（`/zh/`）两个版本，导航栏的语言菜单可以分别切换阅读语言和编程语言（Node.js / Python / Java / .NET）。
+站点默认语言为简体中文（根路径 `/`），英文版在 `/en/` 下。导航栏的语言菜单可以分别切换阅读语言和编程语言（Node.js / Python / Java / .NET）。
 
 - `src/` 中是英文原文，由 `pnpm run generate` 生成。
-- 中文翻译放在 `i18n/zh/` 下，路径与 `src/` 中的英文页面一一对应（例如 `i18n/zh/intro.md`、`i18n/zh/python/intro.md`）。链接按英文写法保留，例如 `/intro.md`，构建时会自动改成 `/zh/...`。
-- `pnpm run docs:dev` 和 `pnpm run docs:build` 会先运行 `scripts/sync-zh.mjs`，生成 `src/zh/`（已被 git 忽略，不要直接修改）。没有翻译的页面会显示英文原文，并在页面顶部提示“本页尚未翻译”。
+- 中文翻译放在 `i18n/zh/` 下，路径与 `src/` 中的英文页面一一对应（例如 `i18n/zh/intro.md`、`i18n/zh/python/intro.md`）。链接按英文写法保留，例如 `/intro.md`。
+- `pnpm run docs:dev` 和 `pnpm run docs:build` 会先运行 `scripts/sync-zh.mjs`，把两种语言组装到 `site/`（VitePress 的 `srcDir`，已被 git 忽略，不要直接修改）：中文页面放在 `site/` 根目录，英文页面放在 `site/en/`，英文页面里的链接会自动改成 `/en/...`。没有翻译的页面会显示英文原文，并在页面顶部提示“本页尚未翻译”。
 - 构建需要较多内存，`docs:build` 已将 Node 堆内存设置为 8 GB。

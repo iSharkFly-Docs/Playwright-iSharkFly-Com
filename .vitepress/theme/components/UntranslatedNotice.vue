@@ -4,8 +4,9 @@ import { computed } from 'vue';
 import { useData } from 'vitepress';
 
 const { frontmatter, page } = useData();
+// Chinese pages are at the site root; the English version of the same page is under /en/.
 const englishLink = computed(() =>
-  '/' + page.value.relativePath.replace(/^zh\//, '').replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, ''));
+  '/en/' + page.value.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, ''));
 </script>
 
 <template>

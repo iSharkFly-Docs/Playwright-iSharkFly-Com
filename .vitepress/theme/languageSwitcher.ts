@@ -3,7 +3,8 @@ import { useData } from 'vitepress';
 
 type ProgrammingLanguage = { key: string; label: string; base: string };
 type SwitcherConfig = {
-  zhPrefix: string;
+  // Simplified Chinese is served from the site root, English from this prefix.
+  enPrefix: string;
   programmingLanguages: ProgrammingLanguage[];
   pages: Record<string, string[]>;
 };
@@ -11,8 +12,8 @@ type SwitcherConfig = {
 export type SwitcherLink = { text: string; link: string; lang?: string; active: boolean };
 
 const READING_LANGUAGES = [
-  { key: 'en', text: 'English', lang: 'en-US' },
   { key: 'zh', text: '简体中文', lang: 'zh-CN' },
+  { key: 'en', text: 'English', lang: 'en-US' },
 ] as const;
 
 // Page path ("intro.md", "api/class-page.md", "index.md") to a clean URL.
@@ -24,13 +25,13 @@ export function useLanguageSwitcher() {
   const { page, theme, hash } = useData();
   const config = computed(() => theme.value.languageSwitcher as SwitcherConfig);
 
-  // Split "zh/python/api/class-page.md" into reading language, programming language and page.
+  // Split "en/python/api/class-page.md" into reading language, programming language and page.
   const current = computed(() => {
     let rest = page.value.relativePath;
-    const zhDir = config.value.zhPrefix.replace(/^\//, '') + '/';
-    const reading = rest.startsWith(zhDir) ? 'zh' : 'en';
-    if (reading === 'zh')
-      rest = rest.slice(zhDir.length);
+    const enDir = config.value.enPrefix.replace(/^\//, '') + '/';
+    const reading = rest.startsWith(enDir) ? 'en' : 'zh';
+    if (reading === 'en')
+      rest = rest.slice(enDir.length);
     const programming = config.value.programmingLanguages.find(
       language => language.key !== 'root' && rest.startsWith(`${language.key}/`)) ?? config.value.programmingLanguages.find(language => language.key === 'root')!;
     if (programming.key !== 'root')
@@ -39,7 +40,7 @@ export function useLanguageSwitcher() {
   });
 
   function linkFor(reading: string, programming: ProgrammingLanguage, keepHash: boolean) {
-    const base = (reading === 'zh' ? config.value.zhPrefix : '') + programming.base;
+    const base = (reading === 'en' ? config.value.enPrefix : '') + programming.base;
     const pages = config.value.pages[programming.key] ?? [];
     if (!pages.includes(current.value.page))
       return base;
