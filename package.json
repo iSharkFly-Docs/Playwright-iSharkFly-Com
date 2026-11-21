@@ -7,8 +7,9 @@
   },
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "i18n:sync": "node scripts/sync-zh.mjs",
+    "docs:dev": "node scripts/sync-zh.mjs && vitepress dev",
+    "docs:build": "node scripts/sync-zh.mjs && node --max-old-space-size=8192 node_modules/vitepress/bin/vitepress.js build",
     "docs:preview": "vitepress preview"
   }
 }
