@@ -1,0 +1,14 @@
+{
+  "packageManager": "pnpm@12.4.1",
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.17",
+    "vue": "^3.5.38",
+    "wrangler": "^4.164.0"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  }
+}

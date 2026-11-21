@@ -1,0 +1,1898 @@
+{
+  "locales": {
+    "root": {
+      "label": "Node.js",
+      "base": "/",
+      "sidebar": {
+        "/api/": [
+          {
+            "text": "Classes",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "APIRequest",
+                "link": "/api/class-apirequest"
+              },
+              {
+                "text": "APIRequestContext",
+                "link": "/api/class-apirequestcontext"
+              },
+              {
+                "text": "APIResponse",
+                "link": "/api/class-apiresponse"
+              },
+              {
+                "text": "APIResponseAssertions",
+                "link": "/api/class-apiresponseassertions"
+              },
+              {
+                "text": "Browser",
+                "link": "/api/class-browser"
+              },
+              {
+                "text": "BrowserContext",
+                "link": "/api/class-browsercontext"
+              },
+              {
+                "text": "BrowserServer",
+                "link": "/api/class-browserserver"
+              },
+              {
+                "text": "BrowserType",
+                "link": "/api/class-browsertype"
+              },
+              {
+                "text": "CDPSession",
+                "link": "/api/class-cdpsession"
+              },
+              {
+                "text": "Clock",
+                "link": "/api/class-clock"
+              },
+              {
+                "text": "ConsoleMessage",
+                "link": "/api/class-consolemessage"
+              },
+              {
+                "text": "Coverage",
+                "link": "/api/class-coverage"
+              },
+              {
+                "text": "Credentials",
+                "link": "/api/class-credentials"
+              },
+              {
+                "text": "Debugger",
+                "link": "/api/class-debugger"
+              },
+              {
+                "text": "Dialog",
+                "link": "/api/class-dialog"
+              },
+              {
+                "text": "Disposable",
+                "link": "/api/class-disposable"
+              },
+              {
+                "text": "Download",
+                "link": "/api/class-download"
+              },
+              {
+                "text": "ElementHandle",
+                "link": "/api/class-elementhandle"
+              },
+              {
+                "text": "FileChooser",
+                "link": "/api/class-filechooser"
+              },
+              {
+                "text": "Frame",
+                "link": "/api/class-frame"
+              },
+              {
+                "text": "FrameLocator",
+                "link": "/api/class-framelocator"
+              },
+              {
+                "text": "GenericAssertions",
+                "link": "/api/class-genericassertions"
+              },
+              {
+                "text": "JSHandle",
+                "link": "/api/class-jshandle"
+              },
+              {
+                "text": "Keyboard",
+                "link": "/api/class-keyboard"
+              },
+              {
+                "text": "Locator",
+                "link": "/api/class-locator"
+              },
+              {
+                "text": "LocatorAssertions",
+                "link": "/api/class-locatorassertions"
+              },
+              {
+                "text": "Logger",
+                "link": "/api/class-logger"
+              },
+              {
+                "text": "Mouse",
+                "link": "/api/class-mouse"
+              },
+              {
+                "text": "Page",
+                "link": "/api/class-page"
+              },
+              {
+                "text": "PageAssertions",
+                "link": "/api/class-pageassertions"
+              },
+              {
+                "text": "Playwright",
+                "link": "/api/class-playwright"
+              },
+              {
+                "text": "PlaywrightAssertions",
+                "link": "/api/class-playwrightassertions"
+              },
+              {
+                "text": "Request",
+                "link": "/api/class-request"
+              },
+              {
+                "text": "Response",
+                "link": "/api/class-response"
+              },
+              {
+                "text": "Route",
+                "link": "/api/class-route"
+              },
+              {
+                "text": "Screencast",
+                "link": "/api/class-screencast"
+              },
+              {
+                "text": "Selectors",
+                "link": "/api/class-selectors"
+              },
+              {
+                "text": "SnapshotAssertions",
+                "link": "/api/class-snapshotassertions"
+              },
+              {
+                "text": "TimeoutError",
+                "link": "/api/class-timeouterror"
+              },
+              {
+                "text": "Touchscreen",
+                "link": "/api/class-touchscreen"
+              },
+              {
+                "text": "Tracing",
+                "link": "/api/class-tracing"
+              },
+              {
+                "text": "Video",
+                "link": "/api/class-video"
+              },
+              {
+                "text": "WebError",
+                "link": "/api/class-weberror"
+              },
+              {
+                "text": "WebMCP",
+                "link": "/api/class-webmcp"
+              },
+              {
+                "text": "WebSocket",
+                "link": "/api/class-websocket"
+              },
+              {
+                "text": "WebSocketRoute",
+                "link": "/api/class-websocketroute"
+              },
+              {
+                "text": "WebStorage",
+                "link": "/api/class-webstorage"
+              },
+              {
+                "text": "Worker",
+                "link": "/api/class-worker"
+              }
+            ]
+          },
+          {
+            "text": "Test Runner",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Fixtures",
+                "link": "/api/class-fixtures"
+              },
+              {
+                "text": "FullConfig",
+                "link": "/api/class-fullconfig"
+              },
+              {
+                "text": "FullProject",
+                "link": "/api/class-fullproject"
+              },
+              {
+                "text": "Location",
+                "link": "/api/class-location"
+              },
+              {
+                "text": "Test",
+                "link": "/api/class-test"
+              },
+              {
+                "text": "TestConfig",
+                "link": "/api/class-testconfig"
+              },
+              {
+                "text": "TestInfo",
+                "link": "/api/class-testinfo"
+              },
+              {
+                "text": "TestInfoError",
+                "link": "/api/class-testinfoerror"
+              },
+              {
+                "text": "TestOptions",
+                "link": "/api/class-testoptions"
+              },
+              {
+                "text": "TestProject",
+                "link": "/api/class-testproject"
+              },
+              {
+                "text": "TestStepInfo",
+                "link": "/api/class-teststepinfo"
+              },
+              {
+                "text": "WorkerInfo",
+                "link": "/api/class-workerinfo"
+              }
+            ]
+          },
+          {
+            "text": "Test Reporter",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Reporter",
+                "link": "/api/class-reporter"
+              },
+              {
+                "text": "Suite",
+                "link": "/api/class-suite"
+              },
+              {
+                "text": "TestCase",
+                "link": "/api/class-testcase"
+              },
+              {
+                "text": "TestError",
+                "link": "/api/class-testerror"
+              },
+              {
+                "text": "TestResult",
+                "link": "/api/class-testresult"
+              },
+              {
+                "text": "TestRun",
+                "link": "/api/class-testrun"
+              },
+              {
+                "text": "TestStep",
+                "link": "/api/class-teststep"
+              }
+            ]
+          },
+          {
+            "text": "Electron",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Electron",
+                "link": "/api/class-electron"
+              },
+              {
+                "text": "ElectronApplication",
+                "link": "/api/class-electronapplication"
+              }
+            ]
+          },
+          {
+            "text": "Android",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Android",
+                "link": "/api/class-android"
+              },
+              {
+                "text": "AndroidDevice",
+                "link": "/api/class-androiddevice"
+              },
+              {
+                "text": "AndroidInput",
+                "link": "/api/class-androidinput"
+              },
+              {
+                "text": "AndroidSocket",
+                "link": "/api/class-androidsocket"
+              },
+              {
+                "text": "AndroidWebView",
+                "link": "/api/class-androidwebview"
+              }
+            ]
+          }
+        ],
+        "/": [
+          {
+            "text": "Getting Started",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Installation",
+                "link": "/intro"
+              },
+              {
+                "text": "Writing tests",
+                "link": "/writing-tests"
+              },
+              {
+                "text": "Generating tests",
+                "link": "/codegen-intro"
+              },
+              {
+                "text": "Running and debugging tests",
+                "link": "/running-tests"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/trace-viewer-intro"
+              },
+              {
+                "text": "Setting up CI",
+                "link": "/ci-intro"
+              },
+              {
+                "text": "VS Code",
+                "link": "/getting-started-vscode"
+              },
+              {
+                "text": "Library",
+                "link": "/library"
+              },
+              {
+                "text": "Release notes",
+                "link": "/release-notes"
+              }
+            ]
+          },
+          {
+            "text": "Playwright Test",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Agents",
+                "link": "/test-agents"
+              },
+              {
+                "text": "Annotations",
+                "link": "/test-annotations"
+              },
+              {
+                "text": "Command line",
+                "link": "/test-cli"
+              },
+              {
+                "text": "Configuration",
+                "link": "/test-configuration"
+              },
+              {
+                "text": "Configuration (use)",
+                "link": "/test-use-options"
+              },
+              {
+                "text": "Fixtures",
+                "link": "/test-fixtures"
+              },
+              {
+                "text": "Global setup and teardown",
+                "link": "/test-global-setup-teardown"
+              },
+              {
+                "text": "Parallelism",
+                "link": "/test-parallel"
+              },
+              {
+                "text": "Parameterize tests",
+                "link": "/test-parameterize"
+              },
+              {
+                "text": "Projects",
+                "link": "/test-projects"
+              },
+              {
+                "text": "Reporters",
+                "link": "/test-reporters"
+              },
+              {
+                "text": "Retries",
+                "link": "/test-retries"
+              },
+              {
+                "text": "Sharding",
+                "link": "/test-sharding"
+              },
+              {
+                "text": "Timeouts",
+                "link": "/test-timeouts"
+              },
+              {
+                "text": "TypeScript",
+                "link": "/test-typescript"
+              },
+              {
+                "text": "UI Mode",
+                "link": "/test-ui-mode"
+              },
+              {
+                "text": "Web server",
+                "link": "/test-webserver"
+              }
+            ]
+          },
+          {
+            "text": "Guides",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Accessibility testing",
+                "link": "/accessibility-testing"
+              },
+              {
+                "text": "Actions",
+                "link": "/input"
+              },
+              {
+                "text": "API testing",
+                "link": "/api-testing"
+              },
+              {
+                "text": "Assertions",
+                "link": "/test-assertions"
+              },
+              {
+                "text": "Authentication",
+                "link": "/auth"
+              },
+              {
+                "text": "Auto-waiting",
+                "link": "/actionability"
+              },
+              {
+                "text": "Best Practices",
+                "link": "/best-practices"
+              },
+              {
+                "text": "Browsers",
+                "link": "/browsers"
+              },
+              {
+                "text": "Canary releases",
+                "link": "/canary-releases"
+              },
+              {
+                "text": "Chrome extensions",
+                "link": "/chrome-extensions"
+              },
+              {
+                "text": "Clock",
+                "link": "/clock"
+              },
+              {
+                "text": "Debugging Tests",
+                "link": "/debug"
+              },
+              {
+                "text": "Dialogs",
+                "link": "/dialogs"
+              },
+              {
+                "text": "Downloads",
+                "link": "/downloads"
+              },
+              {
+                "text": "Emulation",
+                "link": "/emulation"
+              },
+              {
+                "text": "Evaluating JavaScript",
+                "link": "/evaluating"
+              },
+              {
+                "text": "Events",
+                "link": "/events"
+              },
+              {
+                "text": "Extensibility",
+                "link": "/extensibility"
+              },
+              {
+                "text": "Frames",
+                "link": "/frames"
+              },
+              {
+                "text": "Handles",
+                "link": "/handles"
+              },
+              {
+                "text": "Isolation",
+                "link": "/browser-contexts"
+              },
+              {
+                "text": "Locators",
+                "link": "/locators"
+              },
+              {
+                "text": "Mock APIs",
+                "link": "/mock"
+              },
+              {
+                "text": "Mock browser APIs",
+                "link": "/mock-browser-apis"
+              },
+              {
+                "text": "Navigations",
+                "link": "/navigations"
+              },
+              {
+                "text": "Network",
+                "link": "/network"
+              },
+              {
+                "text": "Other locators",
+                "link": "/other-locators"
+              },
+              {
+                "text": "Page object models",
+                "link": "/pom"
+              },
+              {
+                "text": "Pages",
+                "link": "/pages"
+              },
+              {
+                "text": "Screenshots",
+                "link": "/screenshots"
+              },
+              {
+                "text": "Service Workers",
+                "link": "/service-workers"
+              },
+              {
+                "text": "Snapshot testing",
+                "link": "/aria-snapshots"
+              },
+              {
+                "text": "Test generator",
+                "link": "/codegen"
+              },
+              {
+                "text": "Touch events (legacy)",
+                "link": "/touch-events"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/trace-viewer"
+              },
+              {
+                "text": "Videos",
+                "link": "/videos"
+              },
+              {
+                "text": "Visual comparisons",
+                "link": "/test-snapshots"
+              }
+            ]
+          },
+          {
+            "text": "Migration",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Migrating from Protractor",
+                "link": "/protractor"
+              },
+              {
+                "text": "Migrating from Puppeteer",
+                "link": "/puppeteer"
+              },
+              {
+                "text": "Migrating from Testing Library",
+                "link": "/testing-library"
+              }
+            ]
+          },
+          {
+            "text": "Integrations",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Docker",
+                "link": "/docker"
+              },
+              {
+                "text": "Continuous Integration",
+                "link": "/ci"
+              },
+              {
+                "text": "Selenium Grid (experimental)",
+                "link": "/selenium-grid"
+              },
+              {
+                "text": "Component testing",
+                "link": "/test-components"
+              },
+              {
+                "text": "WebView2",
+                "link": "/webview2"
+              }
+            ]
+          },
+          {
+            "text": "Supported Languages",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Supported languages",
+                "link": "/languages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "python": {
+      "label": "Python",
+      "base": "/python/",
+      "sidebar": {
+        "/python/api/": [
+          {
+            "text": "Classes",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "APIRequest",
+                "link": "/python/api/class-apirequest"
+              },
+              {
+                "text": "APIRequestContext",
+                "link": "/python/api/class-apirequestcontext"
+              },
+              {
+                "text": "APIResponse",
+                "link": "/python/api/class-apiresponse"
+              },
+              {
+                "text": "APIResponseAssertions",
+                "link": "/python/api/class-apiresponseassertions"
+              },
+              {
+                "text": "Browser",
+                "link": "/python/api/class-browser"
+              },
+              {
+                "text": "BrowserContext",
+                "link": "/python/api/class-browsercontext"
+              },
+              {
+                "text": "BrowserType",
+                "link": "/python/api/class-browsertype"
+              },
+              {
+                "text": "CDPSession",
+                "link": "/python/api/class-cdpsession"
+              },
+              {
+                "text": "Clock",
+                "link": "/python/api/class-clock"
+              },
+              {
+                "text": "ConsoleMessage",
+                "link": "/python/api/class-consolemessage"
+              },
+              {
+                "text": "Credentials",
+                "link": "/python/api/class-credentials"
+              },
+              {
+                "text": "Debugger",
+                "link": "/python/api/class-debugger"
+              },
+              {
+                "text": "Dialog",
+                "link": "/python/api/class-dialog"
+              },
+              {
+                "text": "Disposable",
+                "link": "/python/api/class-disposable"
+              },
+              {
+                "text": "Download",
+                "link": "/python/api/class-download"
+              },
+              {
+                "text": "ElementHandle",
+                "link": "/python/api/class-elementhandle"
+              },
+              {
+                "text": "Error",
+                "link": "/python/api/class-error"
+              },
+              {
+                "text": "FileChooser",
+                "link": "/python/api/class-filechooser"
+              },
+              {
+                "text": "FormData",
+                "link": "/python/api/class-formdata"
+              },
+              {
+                "text": "Frame",
+                "link": "/python/api/class-frame"
+              },
+              {
+                "text": "FrameLocator",
+                "link": "/python/api/class-framelocator"
+              },
+              {
+                "text": "JSHandle",
+                "link": "/python/api/class-jshandle"
+              },
+              {
+                "text": "Keyboard",
+                "link": "/python/api/class-keyboard"
+              },
+              {
+                "text": "Locator",
+                "link": "/python/api/class-locator"
+              },
+              {
+                "text": "LocatorAssertions",
+                "link": "/python/api/class-locatorassertions"
+              },
+              {
+                "text": "Mouse",
+                "link": "/python/api/class-mouse"
+              },
+              {
+                "text": "Page",
+                "link": "/python/api/class-page"
+              },
+              {
+                "text": "PageAssertions",
+                "link": "/python/api/class-pageassertions"
+              },
+              {
+                "text": "Playwright",
+                "link": "/python/api/class-playwright"
+              },
+              {
+                "text": "Request",
+                "link": "/python/api/class-request"
+              },
+              {
+                "text": "Response",
+                "link": "/python/api/class-response"
+              },
+              {
+                "text": "Route",
+                "link": "/python/api/class-route"
+              },
+              {
+                "text": "Screencast",
+                "link": "/python/api/class-screencast"
+              },
+              {
+                "text": "Selectors",
+                "link": "/python/api/class-selectors"
+              },
+              {
+                "text": "TimeoutError",
+                "link": "/python/api/class-timeouterror"
+              },
+              {
+                "text": "Touchscreen",
+                "link": "/python/api/class-touchscreen"
+              },
+              {
+                "text": "Tracing",
+                "link": "/python/api/class-tracing"
+              },
+              {
+                "text": "Video",
+                "link": "/python/api/class-video"
+              },
+              {
+                "text": "WebError",
+                "link": "/python/api/class-weberror"
+              },
+              {
+                "text": "WebMCP",
+                "link": "/python/api/class-webmcp"
+              },
+              {
+                "text": "WebSocket",
+                "link": "/python/api/class-websocket"
+              },
+              {
+                "text": "WebSocketRoute",
+                "link": "/python/api/class-websocketroute"
+              },
+              {
+                "text": "WebStorage",
+                "link": "/python/api/class-webstorage"
+              },
+              {
+                "text": "Worker",
+                "link": "/python/api/class-worker"
+              }
+            ]
+          }
+        ],
+        "/python/": [
+          {
+            "text": "Getting Started",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Installation",
+                "link": "/python/intro"
+              },
+              {
+                "text": "Writing tests",
+                "link": "/python/writing-tests"
+              },
+              {
+                "text": "Generating tests",
+                "link": "/python/codegen-intro"
+              },
+              {
+                "text": "Running and debugging tests",
+                "link": "/python/running-tests"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/python/trace-viewer-intro"
+              },
+              {
+                "text": "Setting up CI",
+                "link": "/python/ci-intro"
+              },
+              {
+                "text": "Getting started - Library",
+                "link": "/python/library"
+              },
+              {
+                "text": "Release notes",
+                "link": "/python/release-notes"
+              }
+            ]
+          },
+          {
+            "text": "Playwright Test",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Pytest Plugin Reference",
+                "link": "/python/test-runners"
+              }
+            ]
+          },
+          {
+            "text": "Guides",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Actions",
+                "link": "/python/input"
+              },
+              {
+                "text": "API testing",
+                "link": "/python/api-testing"
+              },
+              {
+                "text": "Assertions",
+                "link": "/python/test-assertions"
+              },
+              {
+                "text": "Authentication",
+                "link": "/python/auth"
+              },
+              {
+                "text": "Auto-waiting",
+                "link": "/python/actionability"
+              },
+              {
+                "text": "Browsers",
+                "link": "/python/browsers"
+              },
+              {
+                "text": "Chrome extensions",
+                "link": "/python/chrome-extensions"
+              },
+              {
+                "text": "Clock",
+                "link": "/python/clock"
+              },
+              {
+                "text": "Debugging Tests",
+                "link": "/python/debug"
+              },
+              {
+                "text": "Dialogs",
+                "link": "/python/dialogs"
+              },
+              {
+                "text": "Downloads",
+                "link": "/python/downloads"
+              },
+              {
+                "text": "Emulation",
+                "link": "/python/emulation"
+              },
+              {
+                "text": "Evaluating JavaScript",
+                "link": "/python/evaluating"
+              },
+              {
+                "text": "Events",
+                "link": "/python/events"
+              },
+              {
+                "text": "Extensibility",
+                "link": "/python/extensibility"
+              },
+              {
+                "text": "Frames",
+                "link": "/python/frames"
+              },
+              {
+                "text": "Handles",
+                "link": "/python/handles"
+              },
+              {
+                "text": "Isolation",
+                "link": "/python/browser-contexts"
+              },
+              {
+                "text": "Locators",
+                "link": "/python/locators"
+              },
+              {
+                "text": "Mock APIs",
+                "link": "/python/mock"
+              },
+              {
+                "text": "Navigations",
+                "link": "/python/navigations"
+              },
+              {
+                "text": "Network",
+                "link": "/python/network"
+              },
+              {
+                "text": "Other locators",
+                "link": "/python/other-locators"
+              },
+              {
+                "text": "Page object models",
+                "link": "/python/pom"
+              },
+              {
+                "text": "Pages",
+                "link": "/python/pages"
+              },
+              {
+                "text": "Screenshots",
+                "link": "/python/screenshots"
+              },
+              {
+                "text": "Service Workers",
+                "link": "/python/service-workers"
+              },
+              {
+                "text": "Snapshot testing",
+                "link": "/python/aria-snapshots"
+              },
+              {
+                "text": "Test generator",
+                "link": "/python/codegen"
+              },
+              {
+                "text": "Touch events (legacy)",
+                "link": "/python/touch-events"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/python/trace-viewer"
+              },
+              {
+                "text": "Videos",
+                "link": "/python/videos"
+              }
+            ]
+          },
+          {
+            "text": "Integrations",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Docker",
+                "link": "/python/docker"
+              },
+              {
+                "text": "Continuous Integration",
+                "link": "/python/ci"
+              },
+              {
+                "text": "Selenium Grid (experimental)",
+                "link": "/python/selenium-grid"
+              },
+              {
+                "text": "WebView2",
+                "link": "/python/webview2"
+              }
+            ]
+          },
+          {
+            "text": "Supported Languages",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Supported languages",
+                "link": "/python/languages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "java": {
+      "label": "Java",
+      "base": "/java/",
+      "sidebar": {
+        "/java/api/": [
+          {
+            "text": "Classes",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "APIRequest",
+                "link": "/java/api/class-apirequest"
+              },
+              {
+                "text": "APIRequestContext",
+                "link": "/java/api/class-apirequestcontext"
+              },
+              {
+                "text": "APIResponse",
+                "link": "/java/api/class-apiresponse"
+              },
+              {
+                "text": "APIResponseAssertions",
+                "link": "/java/api/class-apiresponseassertions"
+              },
+              {
+                "text": "Browser",
+                "link": "/java/api/class-browser"
+              },
+              {
+                "text": "BrowserContext",
+                "link": "/java/api/class-browsercontext"
+              },
+              {
+                "text": "BrowserType",
+                "link": "/java/api/class-browsertype"
+              },
+              {
+                "text": "CDPSession",
+                "link": "/java/api/class-cdpsession"
+              },
+              {
+                "text": "Clock",
+                "link": "/java/api/class-clock"
+              },
+              {
+                "text": "ConsoleMessage",
+                "link": "/java/api/class-consolemessage"
+              },
+              {
+                "text": "Credentials",
+                "link": "/java/api/class-credentials"
+              },
+              {
+                "text": "Debugger",
+                "link": "/java/api/class-debugger"
+              },
+              {
+                "text": "Dialog",
+                "link": "/java/api/class-dialog"
+              },
+              {
+                "text": "Download",
+                "link": "/java/api/class-download"
+              },
+              {
+                "text": "ElementHandle",
+                "link": "/java/api/class-elementhandle"
+              },
+              {
+                "text": "FileChooser",
+                "link": "/java/api/class-filechooser"
+              },
+              {
+                "text": "FormData",
+                "link": "/java/api/class-formdata"
+              },
+              {
+                "text": "Frame",
+                "link": "/java/api/class-frame"
+              },
+              {
+                "text": "FrameLocator",
+                "link": "/java/api/class-framelocator"
+              },
+              {
+                "text": "JSHandle",
+                "link": "/java/api/class-jshandle"
+              },
+              {
+                "text": "Keyboard",
+                "link": "/java/api/class-keyboard"
+              },
+              {
+                "text": "Locator",
+                "link": "/java/api/class-locator"
+              },
+              {
+                "text": "LocatorAssertions",
+                "link": "/java/api/class-locatorassertions"
+              },
+              {
+                "text": "Mouse",
+                "link": "/java/api/class-mouse"
+              },
+              {
+                "text": "Page",
+                "link": "/java/api/class-page"
+              },
+              {
+                "text": "PageAssertions",
+                "link": "/java/api/class-pageassertions"
+              },
+              {
+                "text": "Playwright",
+                "link": "/java/api/class-playwright"
+              },
+              {
+                "text": "PlaywrightAssertions",
+                "link": "/java/api/class-playwrightassertions"
+              },
+              {
+                "text": "PlaywrightException",
+                "link": "/java/api/class-playwrightexception"
+              },
+              {
+                "text": "Request",
+                "link": "/java/api/class-request"
+              },
+              {
+                "text": "RequestOptions",
+                "link": "/java/api/class-requestoptions"
+              },
+              {
+                "text": "Response",
+                "link": "/java/api/class-response"
+              },
+              {
+                "text": "Route",
+                "link": "/java/api/class-route"
+              },
+              {
+                "text": "Screencast",
+                "link": "/java/api/class-screencast"
+              },
+              {
+                "text": "Selectors",
+                "link": "/java/api/class-selectors"
+              },
+              {
+                "text": "TimeoutError",
+                "link": "/java/api/class-timeouterror"
+              },
+              {
+                "text": "Touchscreen",
+                "link": "/java/api/class-touchscreen"
+              },
+              {
+                "text": "Tracing",
+                "link": "/java/api/class-tracing"
+              },
+              {
+                "text": "Video",
+                "link": "/java/api/class-video"
+              },
+              {
+                "text": "WebError",
+                "link": "/java/api/class-weberror"
+              },
+              {
+                "text": "WebMCP",
+                "link": "/java/api/class-webmcp"
+              },
+              {
+                "text": "WebSocket",
+                "link": "/java/api/class-websocket"
+              },
+              {
+                "text": "WebSocketFrame",
+                "link": "/java/api/class-websocketframe"
+              },
+              {
+                "text": "WebSocketRoute",
+                "link": "/java/api/class-websocketroute"
+              },
+              {
+                "text": "WebStorage",
+                "link": "/java/api/class-webstorage"
+              },
+              {
+                "text": "Worker",
+                "link": "/java/api/class-worker"
+              }
+            ]
+          }
+        ],
+        "/java/": [
+          {
+            "text": "Getting Started",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Installation",
+                "link": "/java/intro"
+              },
+              {
+                "text": "Writing tests",
+                "link": "/java/writing-tests"
+              },
+              {
+                "text": "Generating tests",
+                "link": "/java/codegen-intro"
+              },
+              {
+                "text": "Running and debugging tests",
+                "link": "/java/running-tests"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/java/trace-viewer-intro"
+              },
+              {
+                "text": "Setting up CI",
+                "link": "/java/ci-intro"
+              },
+              {
+                "text": "Release notes",
+                "link": "/java/release-notes"
+              }
+            ]
+          },
+          {
+            "text": "Playwright Test",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Test Runners",
+                "link": "/java/test-runners"
+              },
+              {
+                "text": "JUnit (experimental)",
+                "link": "/java/junit"
+              }
+            ]
+          },
+          {
+            "text": "Guides",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Accessibility testing",
+                "link": "/java/accessibility-testing"
+              },
+              {
+                "text": "Actions",
+                "link": "/java/input"
+              },
+              {
+                "text": "API testing",
+                "link": "/java/api-testing"
+              },
+              {
+                "text": "Assertions",
+                "link": "/java/test-assertions"
+              },
+              {
+                "text": "Authentication",
+                "link": "/java/auth"
+              },
+              {
+                "text": "Auto-waiting",
+                "link": "/java/actionability"
+              },
+              {
+                "text": "Browsers",
+                "link": "/java/browsers"
+              },
+              {
+                "text": "Clock",
+                "link": "/java/clock"
+              },
+              {
+                "text": "Debugging Tests",
+                "link": "/java/debug"
+              },
+              {
+                "text": "Dialogs",
+                "link": "/java/dialogs"
+              },
+              {
+                "text": "Downloads",
+                "link": "/java/downloads"
+              },
+              {
+                "text": "Emulation",
+                "link": "/java/emulation"
+              },
+              {
+                "text": "Evaluating JavaScript",
+                "link": "/java/evaluating"
+              },
+              {
+                "text": "Events",
+                "link": "/java/events"
+              },
+              {
+                "text": "Extensibility",
+                "link": "/java/extensibility"
+              },
+              {
+                "text": "Frames",
+                "link": "/java/frames"
+              },
+              {
+                "text": "Handles",
+                "link": "/java/handles"
+              },
+              {
+                "text": "Isolation",
+                "link": "/java/browser-contexts"
+              },
+              {
+                "text": "Locators",
+                "link": "/java/locators"
+              },
+              {
+                "text": "Mock APIs",
+                "link": "/java/mock"
+              },
+              {
+                "text": "Multithreading",
+                "link": "/java/multithreading"
+              },
+              {
+                "text": "Navigations",
+                "link": "/java/navigations"
+              },
+              {
+                "text": "Network",
+                "link": "/java/network"
+              },
+              {
+                "text": "Other locators",
+                "link": "/java/other-locators"
+              },
+              {
+                "text": "Page object models",
+                "link": "/java/pom"
+              },
+              {
+                "text": "Pages",
+                "link": "/java/pages"
+              },
+              {
+                "text": "Screenshots",
+                "link": "/java/screenshots"
+              },
+              {
+                "text": "Snapshot testing",
+                "link": "/java/aria-snapshots"
+              },
+              {
+                "text": "Test generator",
+                "link": "/java/codegen"
+              },
+              {
+                "text": "Touch events (legacy)",
+                "link": "/java/touch-events"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/java/trace-viewer"
+              },
+              {
+                "text": "Videos",
+                "link": "/java/videos"
+              }
+            ]
+          },
+          {
+            "text": "Integrations",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Docker",
+                "link": "/java/docker"
+              },
+              {
+                "text": "Continuous Integration",
+                "link": "/java/ci"
+              },
+              {
+                "text": "Selenium Grid (experimental)",
+                "link": "/java/selenium-grid"
+              },
+              {
+                "text": "WebView2",
+                "link": "/java/webview2"
+              }
+            ]
+          },
+          {
+            "text": "Supported Languages",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Supported languages",
+                "link": "/java/languages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "dotnet": {
+      "label": ".NET",
+      "base": "/dotnet/",
+      "sidebar": {
+        "/dotnet/api/": [
+          {
+            "text": "Classes",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "APIRequest",
+                "link": "/dotnet/api/class-apirequest"
+              },
+              {
+                "text": "APIRequestContext",
+                "link": "/dotnet/api/class-apirequestcontext"
+              },
+              {
+                "text": "APIResponse",
+                "link": "/dotnet/api/class-apiresponse"
+              },
+              {
+                "text": "APIResponseAssertions",
+                "link": "/dotnet/api/class-apiresponseassertions"
+              },
+              {
+                "text": "Browser",
+                "link": "/dotnet/api/class-browser"
+              },
+              {
+                "text": "BrowserContext",
+                "link": "/dotnet/api/class-browsercontext"
+              },
+              {
+                "text": "BrowserType",
+                "link": "/dotnet/api/class-browsertype"
+              },
+              {
+                "text": "CDPSession",
+                "link": "/dotnet/api/class-cdpsession"
+              },
+              {
+                "text": "CDPSessionEvent",
+                "link": "/dotnet/api/class-cdpsessionevent"
+              },
+              {
+                "text": "Clock",
+                "link": "/dotnet/api/class-clock"
+              },
+              {
+                "text": "ConsoleMessage",
+                "link": "/dotnet/api/class-consolemessage"
+              },
+              {
+                "text": "Credentials",
+                "link": "/dotnet/api/class-credentials"
+              },
+              {
+                "text": "Debugger",
+                "link": "/dotnet/api/class-debugger"
+              },
+              {
+                "text": "Dialog",
+                "link": "/dotnet/api/class-dialog"
+              },
+              {
+                "text": "Download",
+                "link": "/dotnet/api/class-download"
+              },
+              {
+                "text": "ElementHandle",
+                "link": "/dotnet/api/class-elementhandle"
+              },
+              {
+                "text": "FileChooser",
+                "link": "/dotnet/api/class-filechooser"
+              },
+              {
+                "text": "FormData",
+                "link": "/dotnet/api/class-formdata"
+              },
+              {
+                "text": "Frame",
+                "link": "/dotnet/api/class-frame"
+              },
+              {
+                "text": "FrameLocator",
+                "link": "/dotnet/api/class-framelocator"
+              },
+              {
+                "text": "FunctionAssertions",
+                "link": "/dotnet/api/class-functionassertions"
+              },
+              {
+                "text": "JSHandle",
+                "link": "/dotnet/api/class-jshandle"
+              },
+              {
+                "text": "Keyboard",
+                "link": "/dotnet/api/class-keyboard"
+              },
+              {
+                "text": "Locator",
+                "link": "/dotnet/api/class-locator"
+              },
+              {
+                "text": "LocatorAssertions",
+                "link": "/dotnet/api/class-locatorassertions"
+              },
+              {
+                "text": "Mouse",
+                "link": "/dotnet/api/class-mouse"
+              },
+              {
+                "text": "Page",
+                "link": "/dotnet/api/class-page"
+              },
+              {
+                "text": "PageAssertions",
+                "link": "/dotnet/api/class-pageassertions"
+              },
+              {
+                "text": "Playwright",
+                "link": "/dotnet/api/class-playwright"
+              },
+              {
+                "text": "PlaywrightAssertionException",
+                "link": "/dotnet/api/class-playwrightassertionexception"
+              },
+              {
+                "text": "PlaywrightAssertions",
+                "link": "/dotnet/api/class-playwrightassertions"
+              },
+              {
+                "text": "PlaywrightException",
+                "link": "/dotnet/api/class-playwrightexception"
+              },
+              {
+                "text": "Request",
+                "link": "/dotnet/api/class-request"
+              },
+              {
+                "text": "Response",
+                "link": "/dotnet/api/class-response"
+              },
+              {
+                "text": "Route",
+                "link": "/dotnet/api/class-route"
+              },
+              {
+                "text": "Screencast",
+                "link": "/dotnet/api/class-screencast"
+              },
+              {
+                "text": "Selectors",
+                "link": "/dotnet/api/class-selectors"
+              },
+              {
+                "text": "TimeoutError",
+                "link": "/dotnet/api/class-timeouterror"
+              },
+              {
+                "text": "Touchscreen",
+                "link": "/dotnet/api/class-touchscreen"
+              },
+              {
+                "text": "Tracing",
+                "link": "/dotnet/api/class-tracing"
+              },
+              {
+                "text": "Video",
+                "link": "/dotnet/api/class-video"
+              },
+              {
+                "text": "WebError",
+                "link": "/dotnet/api/class-weberror"
+              },
+              {
+                "text": "WebMCP",
+                "link": "/dotnet/api/class-webmcp"
+              },
+              {
+                "text": "WebSocket",
+                "link": "/dotnet/api/class-websocket"
+              },
+              {
+                "text": "WebSocketFrame",
+                "link": "/dotnet/api/class-websocketframe"
+              },
+              {
+                "text": "WebSocketRoute",
+                "link": "/dotnet/api/class-websocketroute"
+              },
+              {
+                "text": "WebStorage",
+                "link": "/dotnet/api/class-webstorage"
+              },
+              {
+                "text": "Worker",
+                "link": "/dotnet/api/class-worker"
+              }
+            ]
+          }
+        ],
+        "/dotnet/": [
+          {
+            "text": "Getting Started",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Installation",
+                "link": "/dotnet/intro"
+              },
+              {
+                "text": "Writing tests",
+                "link": "/dotnet/writing-tests"
+              },
+              {
+                "text": "Generating tests",
+                "link": "/dotnet/codegen-intro"
+              },
+              {
+                "text": "Running and debugging tests",
+                "link": "/dotnet/running-tests"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/dotnet/trace-viewer-intro"
+              },
+              {
+                "text": "Setting up CI",
+                "link": "/dotnet/ci-intro"
+              },
+              {
+                "text": "Getting started - Library",
+                "link": "/dotnet/library"
+              },
+              {
+                "text": "Release notes",
+                "link": "/dotnet/release-notes"
+              }
+            ]
+          },
+          {
+            "text": "Playwright Test",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Test Runners",
+                "link": "/dotnet/test-runners"
+              }
+            ]
+          },
+          {
+            "text": "Guides",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Actions",
+                "link": "/dotnet/input"
+              },
+              {
+                "text": "API testing",
+                "link": "/dotnet/api-testing"
+              },
+              {
+                "text": "Assertions",
+                "link": "/dotnet/test-assertions"
+              },
+              {
+                "text": "Authentication",
+                "link": "/dotnet/auth"
+              },
+              {
+                "text": "Auto-waiting",
+                "link": "/dotnet/actionability"
+              },
+              {
+                "text": "Browsers",
+                "link": "/dotnet/browsers"
+              },
+              {
+                "text": "Clock",
+                "link": "/dotnet/clock"
+              },
+              {
+                "text": "Debugging Tests",
+                "link": "/dotnet/debug"
+              },
+              {
+                "text": "Dialogs",
+                "link": "/dotnet/dialogs"
+              },
+              {
+                "text": "Downloads",
+                "link": "/dotnet/downloads"
+              },
+              {
+                "text": "Emulation",
+                "link": "/dotnet/emulation"
+              },
+              {
+                "text": "Evaluating JavaScript",
+                "link": "/dotnet/evaluating"
+              },
+              {
+                "text": "Events",
+                "link": "/dotnet/events"
+              },
+              {
+                "text": "Extensibility",
+                "link": "/dotnet/extensibility"
+              },
+              {
+                "text": "Frames",
+                "link": "/dotnet/frames"
+              },
+              {
+                "text": "Handles",
+                "link": "/dotnet/handles"
+              },
+              {
+                "text": "Isolation",
+                "link": "/dotnet/browser-contexts"
+              },
+              {
+                "text": "Locators",
+                "link": "/dotnet/locators"
+              },
+              {
+                "text": "Mock APIs",
+                "link": "/dotnet/mock"
+              },
+              {
+                "text": "Navigations",
+                "link": "/dotnet/navigations"
+              },
+              {
+                "text": "Network",
+                "link": "/dotnet/network"
+              },
+              {
+                "text": "Other locators",
+                "link": "/dotnet/other-locators"
+              },
+              {
+                "text": "Page object models",
+                "link": "/dotnet/pom"
+              },
+              {
+                "text": "Pages",
+                "link": "/dotnet/pages"
+              },
+              {
+                "text": "Screenshots",
+                "link": "/dotnet/screenshots"
+              },
+              {
+                "text": "Snapshot testing",
+                "link": "/dotnet/aria-snapshots"
+              },
+              {
+                "text": "Test generator",
+                "link": "/dotnet/codegen"
+              },
+              {
+                "text": "Touch events (legacy)",
+                "link": "/dotnet/touch-events"
+              },
+              {
+                "text": "Trace viewer",
+                "link": "/dotnet/trace-viewer"
+              },
+              {
+                "text": "Videos",
+                "link": "/dotnet/videos"
+              }
+            ]
+          },
+          {
+            "text": "Integrations",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Docker",
+                "link": "/dotnet/docker"
+              },
+              {
+                "text": "Continuous Integration",
+                "link": "/dotnet/ci"
+              },
+              {
+                "text": "Selenium Grid (experimental)",
+                "link": "/dotnet/selenium-grid"
+              },
+              {
+                "text": "WebView2",
+                "link": "/dotnet/webview2"
+              }
+            ]
+          },
+          {
+            "text": "Supported Languages",
+            "collapsed": false,
+            "items": [
+              {
+                "text": "Supported languages",
+                "link": "/dotnet/languages"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
