@@ -91,7 +91,7 @@ npx wrangler deploy --env production
 | Playwright GitHub | https://github.com/microsoft/playwright |
 | iSharkFly 文档站 | https://docs.isharkfly.com/ |
 
-[联系我们](CONTACT.md ':include')
+[联系我们](LINKS.md ':include')
 
 ## 许可证
 
