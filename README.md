@@ -1,90 +1,94 @@
-# iSharkFly 文档和手册
+# Playwright 中文文档
 
-欢迎来到鲨鱼君的文档和手册的空间
+Playwright 端到端测试框架的简体中文翻译文档。
 
-GitHub 上有关 HoneyMoose
-的项目：[https://github.com/iSharkfly-Docs/docs-isharkfly-com](https://github.com/iSharkfly-Docs/docs-isharkfly-com)
+- 在线地址：[https://playwright.isharkfly.com/](https://playwright.isharkfly.com/)
+- 源码仓库：[https://src.sharkdat.com/iSharkFly-Docs/playwright-isharkfly-com](https://src.sharkdat.com/iSharkFly-Docs/playwright-isharkfly-com)
 
-[联系我们](CONTACT.md ':include')
-
-## 如何运行文档
-
-本文档是通过 VitePress 进行编译和安装的。
-
-### 安装 vitepress
-
-如果你的计算机还没有安装 vitepress 的话，请运行命令  `pnpm add -D vitepress@next` 来进行安装。
-
-### 校验安装结果
-
-运行命令 `npx vitepress -v` 来校验安装结果，界面上应该显示：
-
-```text
-PS D:\WorkDir\Repository\iSharkfly-Docs\Docs\docs-isharkfly-com> npx vitepress -v
-
-  vitepress v2.0.0-alpha.17
-
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h to show help
+## 项目结构
 
 ```
-
-### 运行 文档
-
-如果你希望在你的本地计算机上查看本文档，请运行  `npm run docs:dev` ， 在你的控制台上将会有下面的内如输出：
-
-```powershell
-PS D:\WorkDir\Repository\iSharkfly-Docs\Docs\docs-isharkfly-com> npm run docs:dev
-Re-optimizing dependencies because vite config has changed
-
-vitepress v2.0.0-alpha.17
-
-➜  Local:   http://localhost:5173/
-➜  Network: use --host to expose
-➜  press h to show help
+src/           # 英文原文（由 pnpm run generate 生成）
+i18n/zh/       # 简体中文翻译
+site/          # VitePress srcDir（构建时自动生成，已被 git 忽略）
+scripts/       # 构建脚本
+.vitepress/    # VitePress 配置
 ```
 
-## iSharkFly 文档和手册快速导航
-
-在下面的表格中，我们列出了一些比较有用相关软件开发使用教程的导航，在我们文档的整理中，也参考了一些这些文档。
-
-在这里对原作者表示感谢。
-
-| 网站名称               | URL                                                            | NOTE                      | GitHub                                                                                                                   | 
-|--------------------|----------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| DOCS.ISHARKFLY.COM | [https://docs.isharkfly.com/#/](https://docs.isharkfly.com/#/) | 本手册的编译版本将会部署在这个链接上        | [https://src.sharkdat.com/iSharkFly-Docs/docs-isharkfly-com](https://src.sharkdat.com/iSharkFly-Docs/docs-isharkfly-com) |
-| WWW.CWIKIUS.CN     | [http://www.cwikius.cn/](http://www.cwikius.cn/)               | CWIKIUS.CN 一个有独立思考和温度的清新站 | N/A                                                                                                                      |
-
-### 前端和 UI
-
-| 网站名称            | URL                                                | NOTE                        |
-|-----------------|----------------------------------------------------|-----------------------------|
-| iSharkFly - 飞鲨  | https://www.isharkfly.com/c/software-development/5 | 计算机相关的前端框架和讨论               |
-| TypeScript 文档手册 | https://typescript.ossez.com/                      | TypeScript 相关技术文档和手册        |
-| Angular 技术手册    | https://angular.ossez.com/                         | Angular 手册的在线翻译版本，从源代码中进行编译 |
-| TypeScript 文档手册 | https://typescript.ossez.com/                      | TypeScript 相关技术文档和手册        |
-| Docsify 中文文档手册  | https://docsify.isharkfly.com/                     | Docsify 可以快速帮你生成文档网站        |
-
-### 后端和数据
-
-| 网站名称                   | URL                               | NOTE                 |
-|------------------------|-----------------------------------|----------------------|
-| Apache Druid 技术手册      | https://druid.isharkfly.com/      | Druid 手册的在线翻译版本      |
-| Amazon OpenSearch 技术手册 | https://opensearch.isharkfly.com/ | OpenSearch 手册的在线翻译版本 |
-| HAPI FHIR              | https://fhir.isharkfly.com/#/     | FHIR 相关技术文档的收集和讨论    |
-
-### 容器 docker
-
-| 网站名称               | URL                            | NOTE                                                        |
-|--------------------|--------------------------------|-------------------------------------------------------------|
-| Docker 手册中译在线版     | https://docker.ossez.com/      | 基于 Docker 容器英文手册的翻译版本                                       |
-| Docker 手册中译 MD 在线版 | https://docker-docs.ossez.com/ | 因为 Docker 的官方手册进行了渲染，我们推荐你使用上面的链接，这个版本为 docsify 渲染版本，可能会丢格式 |
 ## 中英双语
 
-站点默认语言为简体中文（根路径 `/`），英文版在 `/en/` 下。导航栏的语言菜单可以分别切换阅读语言和编程语言（Node.js / Python / Java / .NET）。
+站点默认语言为简体中文（根路径 `/`），英文版在 `/en/` 下。导航栏的语言菜单可以切换阅读语言和编程语言（Node.js / Python / Java / .NET）。
 
-- `src/` 中是英文原文，由 `pnpm run generate` 生成。
-- 中文翻译放在 `i18n/zh/` 下，路径与 `src/` 中的英文页面一一对应（例如 `i18n/zh/intro.md`、`i18n/zh/python/intro.md`）。链接按英文写法保留，例如 `/intro.md`。
-- `pnpm run docs:dev` 和 `pnpm run docs:build` 会先运行 `scripts/sync-zh.mjs`，把两种语言组装到 `site/`（VitePress 的 `srcDir`，已被 git 忽略，不要直接修改）：中文页面放在 `site/` 根目录，英文页面放在 `site/en/`，英文页面里的链接会自动改成 `/en/...`。没有翻译的页面会显示英文原文，并在页面顶部提示“本页尚未翻译”。
-- 构建需要较多内存，`docs:build` 已将 Node 堆内存设置为 8 GB。
+- 中文翻译放在 `i18n/zh/` 下，路径与 `src/` 中的英文页面一一对应
+- 没有翻译的页面会显示英文原文，并在页面顶部提示"本页尚未翻译"
+
+## 本地开发
+
+### 环境要求
+
+- Node.js 22+（见 `.node-version`）
+- pnpm 12.4.1+
+
+### 安装依赖
+
+```bash
+pnpm install
+```
+
+### 生成英文原文
+
+首次运行或更新 Playwright 官方文档时需要执行：
+
+```bash
+pnpm run generate
+```
+
+### 启动开发服务器
+
+```bash
+pnpm run docs:dev
+```
+
+访问 http://localhost:5173/ 查看文档。
+
+### 构建生产版本
+
+```bash
+pnpm run docs:build
+```
+
+构建输出在 `.vitepress/dist/` 目录。构建需要较多内存，已将 Node 堆内存设置为 8 GB。
+
+### 预览构建结果
+
+```bash
+pnpm run docs:preview
+```
+
+## 部署
+
+项目使用 Cloudflare Workers Static Assets 托管，配置见 `wrangler.jsonc`。
+
+```bash
+# 部署到 production 环境
+npx wrangler deploy --env production
+```
+
+## 参与翻译
+
+1. 在 `i18n/zh/` 下创建对应英文页面路径的文件
+2. 翻译内容，保留链接的英文写法（如 `/intro.md`）
+3. 运行 `pnpm run docs:dev` 预览效果
+4. 提交 PR
+
+## 相关链接
+
+| 名称 | 地址 |
+|------|------|
+| Playwright 官方文档 | https://playwright.dev/ |
+| Playwright GitHub | https://github.com/microsoft/playwright |
+| iSharkFly 文档站 | https://docs.isharkfly.com/ |
+
+## 许可证
+
+本项目基于 [Apache License 2.0](LICENSE) 许可证开源。
