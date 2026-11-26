@@ -95,4 +95,4 @@ npx wrangler deploy --env production
 
 ## 许可证
 
-本项目基于 [Apache License 2.0](LICENSE) 许可证开源。
+本项目基于 [MIT License](LICENSE) 许可证开源。
