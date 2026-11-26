@@ -104,6 +104,18 @@ const zhSearchText = {
   },
 };
 
+// iSharkFly links shown as a dropdown at the end of the nav bar.
+function isharkflyNav(zh: boolean): DefaultTheme.NavItem {
+  return {
+    text: 'iSharkFly',
+    items: [
+      { text: zh ? 'iSharkFly' : 'iSharkFly', link: 'https://www.isharkfly.com/' },
+      { text: zh ? '文档导航' : 'Docs Portal', link: 'https://docs.isharkfly.com/' },
+      { text: zh ? '本站源码' : 'Source Code', link: 'https://src.sharkdat.com/iSharkFly-Docs/playwright-isharkfly-com' },
+    ],
+  };
+}
+
 const zhLocales: LocaleConfig<DefaultTheme.Config> = {};
 const enLocales: LocaleConfig<DefaultTheme.Config> = {};
 for (const [key, locale] of Object.entries(site.locales)) {
@@ -119,6 +131,7 @@ for (const [key, locale] of Object.entries(site.locales)) {
       nav: [
         { text: '文档', link: `${locale.base}intro`, activeMatch: `^${locale.base}(?!api/)[^/]+$` },
         { text: 'API', link: `${locale.base}api/class-playwright`, activeMatch: `^${locale.base}api/` },
+        isharkflyNav(true),
       ],
       sidebar: mapSidebar(locale.sidebar, link => link, text => zhSidebarText[text] ?? text),
     },
@@ -135,6 +148,7 @@ for (const [key, locale] of Object.entries(site.locales)) {
       nav: [
         { text: 'Docs', link: `${enBase}intro`, activeMatch: `^${enBase}(?!api/)[^/]+$` },
         { text: 'API', link: `${enBase}api/class-playwright`, activeMatch: `^${enBase}api/` },
+        isharkflyNav(false),
       ],
       sidebar: mapSidebar(locale.sidebar, enLink, text => text),
     },
