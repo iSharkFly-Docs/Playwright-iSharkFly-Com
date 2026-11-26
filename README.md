@@ -1,4 +1,4 @@
-# iSharkFly - Playwright 中欢迎来到鲨鱼君的文档和手册的空间
+# iSharkFly - Playwright 中文版
 
 Playwright 端到端测试框架的简体中文翻译文档。
 
