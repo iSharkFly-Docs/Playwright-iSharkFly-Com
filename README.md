@@ -5,7 +5,7 @@ Playwright 端到端测试框架的简体中文翻译文档。
 - 在线地址：[https://playwright.isharkfly.com/](https://playwright.isharkfly.com/)
 - 源码仓库：[https://src.sharkdat.com/iSharkFly-Docs/playwright-isharkfly-com](https://src.sharkdat.com/iSharkFly-Docs/playwright-isharkfly-com)
 
-[联系我们](CONTACT.md ':include')
+[联系我们](CONTACT.md)
 
 ## 项目结构
 
@@ -91,7 +91,7 @@ npx wrangler deploy --env production
 | Playwright GitHub | https://github.com/microsoft/playwright |
 | iSharkFly 文档站 | https://docs.isharkfly.com/ |
 
-[联系我们](LINKS.md ':include')
+[相关链接导航](LINKS.md)
 
 ## 许可证
 
